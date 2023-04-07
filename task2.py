@@ -2,8 +2,10 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 
+user_name = input("Enter the Twitter Username: ")
+
 driver = webdriver.Chrome()
-driver.get("https://www.twitter.com/Exotel")
+driver.get(f"https://www.twitter.com/{user_name}")
 time.sleep(5)
 initialScroll = 0
 finalScroll = 1000
